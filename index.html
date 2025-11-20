@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SNEAKERS</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="modal" id="modal">
+        <div class="burger__menu">
+          <div class="full__close">
+            <svg
+              id="menu__close"
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                id="Combined Shape"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M20 2.85714L17.1429 0L10 7.14286L2.85714 0L0 2.85714L7.14286 10L0 17.1429L2.85714 20L10 12.8571L17.1429 20L20 17.1429L12.8571 10L20 2.85714Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+          <ul class="burger__list">
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="profile__modal" id="profile__modal">
+        <div class="profile__pic">
+           <div class="full__close">
+            <svg
+              id="profile__close"
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                id="Combined Shape"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M20 2.85714L17.1429 0L10 7.14286L2.85714 0L0 2.85714L7.14286 10L0 17.1429L2.85714 20L10 12.8571L17.1429 20L20 17.1429L12.8571 10L20 2.85714Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+          <img src="./images/user.png" alt="">
+        </div>
+      </div>
+      <div class="overlay" id="overlay">
+        <div class="full__imgs">
+          <div class="left" id="full__left">
+            <svg
+              width="9"
+              height="14"
+              viewBox="0 0 9 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.06055 1.06067L6.77483 6.77495L1.06055 12.4892"
+                stroke="#1D2026"
+                stroke-width="3"
+              />
+            </svg>
+          </div>
+          <div class="right" id="full__right">
+            <svg
+              width="9"
+              height="14"
+              viewBox="0 0 9 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.06055 1.06067L6.77483 6.77495L1.06055 12.4892"
+                stroke="#1D2026"
+                stroke-width="3"
+              />
+            </svg>
+          </div>
+          <div class="full__close">
+            <svg
+              id="overlay_close"
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                id="Combined Shape"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M20 2.85714L17.1429 0L10 7.14286L2.85714 0L0 2.85714L7.14286 10L0 17.1429L2.85714 20L10 12.8571L17.1429 20L20 17.1429L12.8571 10L20 2.85714Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+          <div class="full__img-main">
+            <img id="full_img" src="./images/img1.png" alt="" />
+          </div>
+          <div class="full__imgs-mini">
+            <div class="full__img-mini">
+              <img class="fullMini" src="./images/img1.png" alt="" />
+            </div>
+            <div class="full__img-mini">
+              <img class="fullMini" src="./images/img2.png" alt="" />
+            </div>
+            <div class="full__img-mini">
+              <img class="fullMini" src="./images/img3.png" alt="" />
+            </div>
+            <div class="full__img-mini">
+              <img class="fullMini" src="./images/img4.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav>
+        <div class="container nav__container">
+          <div class="shop" id="shop">
+            <div class="shop__top">
+              <h3>Cart</h3>
+            </div>
+            <div class="shop__bottom">
+              <p class="shop__bottom--empty">Your cart is empty.</p>
+              <ul class="shop__product" id="shop__list"></ul>
+              <button class="shopBtn">Checkout</button>
+            </div>
+          </div>
+          <div class="menu" id="menu">
+            <img src="./images/burger-menu.svg" alt="menu" />
+          </div>
+          <a href="/">
+            <img class="logo" src="./images/logo.svg" alt="logo" />
+          </a>
+          <ul class="nav__links">
+            <li class="nav__item">
+              <a href="#">Collections</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">Men</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">Women</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+          <div class="profile">
+            <div class="shopCard">
+              <span id="shopCount"></span>
+              <svg
+                class="profile__cart"
+                id="cart"
+                width="22"
+                height="20"
+                viewBox="0 0 22 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="Group 14">
+                  <path
+                    id="Shape"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M3.86313 3.64139H20.9246C21.5077 3.64139 21.9352 4.19014 21.7941 4.75489L19.9732 12.0381C19.8781 12.4181 19.5473 12.6924 19.1563 12.7153L4.83452 13.557C5.09057 14.1554 5.68378 14.5661 6.36452 14.5661H16.3727C17.8709 14.5661 19.0897 15.7849 19.0897 17.2831C19.0897 18.7812 17.8709 20 16.3727 20C14.4955 20 13.1758 18.1275 13.818 16.3584H8.91319C9.55625 18.1298 8.23365 20 6.35846 20C4.09916 20 2.83011 17.3851 4.21903 15.6114C3.44867 15.0012 3.00149 14.1031 2.92835 13.2755C1.79349 0.631508 1.84298 1.18296 1.9492 2.36648L1.94921 2.36663L1.94928 2.36744C2.02069 3.1631 2.11759 4.24273 1.89764 1.79232H0.896159C0.401223 1.79232 0 1.39109 0 0.896159C0 0.401223 0.401223 0 0.896159 0H2.71694C3.18081 0 3.56803 0.354025 3.60951 0.816059L3.86313 3.64139ZM5.43388 17.2831C5.43388 17.7929 5.84867 18.2077 6.35846 18.2077C6.86829 18.2077 7.28308 17.7929 7.28308 17.2831C7.28308 16.7732 6.86829 16.3584 6.35846 16.3584C5.84867 16.3584 5.43388 16.7732 5.43388 17.2831ZM16.3727 18.2077C15.8629 18.2077 15.4481 17.7929 15.4481 17.2831C15.4481 16.7732 15.8629 16.3584 16.3727 16.3584C16.8825 16.3584 17.2973 16.7732 17.2973 17.2831C17.2973 17.7929 16.8825 18.2077 16.3727 18.2077ZM4.59328 11.7758L18.394 10.9648L19.7769 5.43367H4.02401L4.59328 11.7758Z"
+                    fill="#69707D"
+                  />
+                </g>
+              </svg>
+            </div>
+            <div class="profile__user" id="user">
+              <img src="./images/user.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="hero">
+        <div class="container hero__container">
+          <div class="product__imgs">
+            <div class="product__img-main" id="main_img">
+              <div class="mainbtns main__left" id="main__left">
+                <svg
+                  width="9"
+                  height="14"
+                  viewBox="0 0 9 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.06055 1.06067L6.77483 6.77495L1.06055 12.4892"
+                    stroke="#1D2026"
+                    stroke-width="3"
+                  />
+                </svg>
+              </div>
+              <div class="mainbtns main__right" id="main__right">
+                <svg
+                  width="9"
+                  height="14"
+                  viewBox="0 0 9 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.06055 1.06067L6.77483 6.77495L1.06055 12.4892"
+                    stroke="#1D2026"
+                    stroke-width="3"
+                  />
+                </svg>
+              </div>
+              <img id="main__picture" src="./images/img1.png" alt="" />
+            </div>
+            <div class="product__imgs-mini">
+              <div class="product__img-mini">
+                <img class="mini_pictures" src="./images/img1.png" alt="" />
+              </div>
+              <div class="product__img-mini">
+                <img class="mini_pictures" src="./images/img2.png" alt="" />
+              </div>
+              <div class="product__img-mini">
+                <img class="mini_pictures" src="./images/img3.png" alt="" />
+              </div>
+              <div class="product__img-mini">
+                <img class="mini_pictures" src="./images/img4.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="product__info">
+            <h4 class="product__subtitle">Sneaker Company</h4>
+            <h1 class="product__title">Fall Limited Edition Sneakers</h1>
+            <p class="product__description">
+              These low-profile sneakers are your perfect casual wear companion.
+              Featuring a durable rubber outer sole, they’ll withstand
+              everything the weather can offer.
+            </p>
+            <div class="product__price">
+              <div class="product__name">
+                <h2>$ <label id="product__price">125.00</label></h2>
+                <span>50%</span>
+              </div>
+              <del>$250.00</del>
+            </div>
+            <div class="product__btns">
+              <div class="count__btns">
+                <button id="minus">-</button>
+                <p class="count" id="count">1</p>
+                <button id="plus">+</button>
+              </div>
+              <button class="add__btn" id="addBtn">
+                <img src="./images/cart2.svg" alt="add cart" />Add to cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
